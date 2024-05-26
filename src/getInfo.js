@@ -11,7 +11,7 @@ let isCelcius = true;
 const areaName = document.querySelector('.areaName');
 
 export async function getTemp(location) {
-  const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=16d3d8b00296420daec115624242803 &q=${location}&aqi=no`, {mode: 'cors'});
+  const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=16d3d8b00296420daec115624242803&q=${location}&aqi=no`, {mode: 'cors'});
   response.json().then(function(response) {
     const responseCurrent = response.current;
     const areaName = response.location.name;
