@@ -8,6 +8,8 @@ import partlyCloudyLight from '../src/images/partly-cloudy-light.png';
 import tempLight from '../src/images/water-drop.png';
 import rainLight from '../src/images/rain-light.png';
 import windLight from '../src/images/wind-light.png';
+import nightImg from '../src/images/darkmountain.jpg';
+import dayImg from '../src/images/1994610.jpg';
 
 let current = 0;
 // eslint-disable-next-line require-jsdoc
@@ -59,13 +61,13 @@ export default function toggleTheme() {
     });
 
     // eslint-disable-next-line max-len
-    content.style.backgroundImage = 'url(/home/endertrailer/repos/Weather-app/src/images/darkmountain.jpg)';
+    content.style.backgroundImage = nightImg;
     current = 1;
   } else {
     current = 0;
     const content = document.getElementById('content');
     // eslint-disable-next-line max-len
-    content.style.backgroundImage = 'url(/home/endertrailer/repos/Weather-app/src/images/1994610.jpg)';
+    content.style.backgroundImage = dayImg;
     removeLight();
   }
 }
