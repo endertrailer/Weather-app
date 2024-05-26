@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+</head>
+<body>
+    <div id="content">
+       
+        <div class="leftBar">
+            <div class="inputContainer">
+            <input type="text" id="inputArea" placeholder="Search location">
+            <img src="../src/images/search.svg" alt="search" class="searchImg">
+             <div class="errorBar"></div>
+            </div>
+           
+            <label class="switch">
+                <input class="switch__input" type="checkbox" role="switch">
+                <svg class="switch__icon switch__icon--light" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+                    <g fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round">
+                        <circle cx="6" cy="6" r="2" />
+                        <g stroke-dasharray="1.5 1.5">
+                            <polyline points="6 10,6 11.5" transform="rotate(0,6,6)" />
+                            <polyline points="6 10,6 11.5" transform="rotate(45,6,6)" />
+                            <polyline points="6 10,6 11.5" transform="rotate(90,6,6)" />
+                            <polyline points="6 10,6 11.5" transform="rotate(135,6,6)" />
+                            <polyline points="6 10,6 11.5" transform="rotate(180,6,6)" />
+                            <polyline points="6 10,6 11.5" transform="rotate(225,6,6)" />
+                            <polyline points="6 10,6 11.5" transform="rotate(270,6,6)" />
+                            <polyline points="6 10,6 11.5" transform="rotate(315,6,6)" />
+                        </g>
+                    </g>
+                </svg>
+                <svg class="switch__icon switch__icon--dark" viewBox="0 0 12 12" width="12px" height="12px" aria-hidden="true">
+                    <g fill="none" stroke="#fff" stroke-width="1" stroke-linejoin="round" transform="rotate(-45,6,6)">
+                        <path d="m9,10c-2.209,0-4-1.791-4-4s1.791-4,4-4c.304,0,.598.041.883.105-.995-.992-2.367-1.605-3.883-1.605C2.962.5.5,2.962.5,6s2.462,5.5,5.5,5.5c1.516,0,2.888-.613,3.883-1.605-.285.064-.578.105-.883.105Z"/>
+                    </g>	
+                </svg>
+                <span class="switch__sr">Dark Mode</span>
+            </label>
+            <div class="switchTempBar">
+                <div class="celciusBtn selected">C</div>   
+                <div class="farhenheitBtn">F</div>
+               </div>
+               <div class="hourSwitcher">
+                <img src="../src/images/angle-left.png" alt="" class="previousHour">
+                <div class="hourBarLocation">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <img src="../src/images/angle-right.png" alt="" class="nextHours">
+               </div>
+        </div>
+    <div class="mainInfo">
+        <!-- <div class="areaInfo"> -->
+            
+            <!-- <div class="areaDate">September 25, 2024</div>
+            <div class="areaHour">Wednesday, 11:00 AM</div> -->
+        <!-- </div> -->
+        
+        <div class="mainDetails"> 
+        <div class="areaName">New York</div>
+        <div class="wainDetails"><div class="weatherCondition">Party Cloudy </div>
+        <div class="mainTemp">16 °C</div></div>
+        
+        <img src="/home/endertrailer/Downloads/274769_weather_partly%20cloudy_cloudy_forecast_icon.svg" alt="" class="weatherSymbol">
+        </div>
+    </div>
+    <div class="rightBar">
+        <div class="feelsLike">
+            <img src="" alt="" class="rightBarImg">
+            <div class="header">Feels Like</div>
+            <div class="feelsLikeData">16 °C</div>
+        </div>
+        <div class="humidity">
+            <img src="" alt="" class="rightBarImg">
+            <div class="header">humidity</div>
+            <div class="humidityData">17 %</div>
+        </div>
+        <div class="chanceOfRain">
+            <img src="" alt="" class="rightBarImg rainImg">
+            <div class="header">chance of rain</div>
+            <div class="chanceOfRainData">0 %</div>
+        </div>
+        <div class="windSpeed">
+            <img src="" alt="" class="rightBarImg">
+            <div class="header">wind speed</div>
+            <div class="windSpeedData">10 km/h</div>
+        </div>
+    </div>
+    <div class="dayBar">
+        <div class="hourCard">
+            <div class="hour">5 am</div>
+            <div class="hourTemp">16 °C</div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div>
+        <div class="hourCard">
+            <div class="hour"></div>
+            <div class="hourTemp"></div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div>
+        <div class="hourCard">
+            <div class="hour"></div>
+            <div class="hourTemp"></div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div>
+        <div class="hourCard">
+            <div class="hour"></div>
+            <div class="hourTemp"></div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div>
+        <div class="hourCard">
+            <div class="hour"></div>
+            <div class="hourTemp"></div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div>
+        <div class="hourCard">
+            <div class="hour"></div>
+            <div class="hourTemp"></div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div>
+        <!-- <div class="hourCard">
+            <div class="hour"></div>
+            <div class="hourTemp"></div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div>
+        <div class="hourCard">
+            <div class="hour"></div>
+            <div class="hourTemp"></div>
+            <img src="" alt="" class="hourWeatherSymbol">
+        </div> -->
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
