@@ -61,13 +61,13 @@ export default function toggleTheme() {
     });
 
     // eslint-disable-next-line max-len
-    content.style.backgroundImage = nightImg;
+    content.style.backgroundImage = `url(${nightImg})`;
     current = 1;
   } else {
     current = 0;
     const content = document.getElementById('content');
     // eslint-disable-next-line max-len
-    content.style.backgroundImage = dayImg;
+    content.style.backgroundImage = `url(${dayImg})`;
     removeLight();
   }
 }
